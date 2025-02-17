@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,7 +8,7 @@ body {
     text-align: center;
 }
 
-/* Header */
+
 header {
     background: linear-gradient(135deg, #2c3e50, #1e1e1e);
     color: white;
@@ -34,7 +34,7 @@ header {
     
 }
 
-/* Skills Section */
+
 #skills {
     background: linear-gradient(135deg, #292929, #1e1e1e);
     padding: 30px;
@@ -56,7 +56,7 @@ header {
     border-radius: 5px;
 }
 
-/* Projects Section */
+
 #projects {
     padding: 30px;
 }
@@ -70,7 +70,7 @@ header {
     border-left: 5px solid #3498db;
 }
 
-/* Contact Section */
+
 #contact {
     background: linear-gradient(135deg, #292929, #1e1e1e);
     padding: 30px;
@@ -87,7 +87,7 @@ header {
     text-decoration: underline;
 }
 
-/* Footer */
+
 footer {
     background: linear-gradient(135deg, #2c3e50, #1e1e1e);
     color: white;
