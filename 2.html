@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>David Yap Two Truths one Lie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        .statement {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        
+        p.instruction {
+            font-style: italic;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Two Truths and one Lie</h1>
+    
+    <div class="statement" data-truth="true">I am an IT student</div>
+    <div class="statement" data-truth="true">I know how to code</div>
+    <div class="statement" data-truth="false">I am good at coding</div>
+    
+    <p class="instruction">Green = Truth, Red = Lie</p>
+    
+    <script>
+        const statements = document.querySelectorAll('.statement');
+        
+        statements.forEach(statement => {
+            statement.addEventListener('mouseover', function() {
+                const isTruth = this.getAttribute('data-truth') === 'true';
+                if (isTruth) {
+                    this.style.backgroundColor = 'lightgreen';
+                } else {
+                    this.style.backgroundColor = 'lightcoral';
+                }
+            });
+            
+            statement.addEventListener('mouseout', function() {
+                this.style.backgroundColor = '';
+            });
+        });
+    </script>
+</body>
+</html>
